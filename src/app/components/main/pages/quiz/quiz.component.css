@@ -1,0 +1,27 @@
+.button-quiz{
+    @apply w-full p-3 px-6 rounded-full bg-pink-600 bg-opacity-20 text-left flex justify-between mb-5 duration-1000;
+}
+
+.certa{
+    @apply ring-4 ring-green-500 bg-green-500 bg-opacity-50;
+}
+
+.errada{
+    @apply ring-2 ring-red-500;
+}
+
+.icon-certa{
+    @apply text-green-500 animate-pulse;
+}
+
+.icon-errada{
+    @apply text-red-500;
+}
+
+.button-arrow{
+    @apply w-10 h-10 bg-purple-500 bg-opacity-80 shadow-inner shadow-black flex justify-center items-center rounded-full font-bold;
+}
+
+.esconder-filho button:nth-child(1){
+    display: none;
+}

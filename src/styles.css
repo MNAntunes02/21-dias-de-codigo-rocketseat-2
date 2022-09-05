@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Hacked;
+    src: url(./assets/fonts/HACKED.ttf);
+}
+
+/* .checkbox-theme{
+
+} */
+
+.text-Hacked{
+    font-family: Hacked;
+}
+
+.neon-animated{
+    animation: neon 3s linear infinite;
+}
+
+html{
+    --main-color-1: rgb(219 39 119);
+    --main-color-2: rgb(147 51 234);
+}
+
+body{
+    background-color: black;
+    background-image: url(./assets/images/bg-pink.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+html, body { 
+    height: 100%; 
+    overflow: hidden;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@keyframes neon {
+    0%{
+        filter: drop-shadow(0 0 1rem black);
+    }
+    80%{
+        filter: drop-shadow(0 0 1rem black);
+    }
+    85%{
+        filter: drop-shadow(0 0 1rem var(--main-color-1));
+    }
+    90%{
+        filter: drop-shadow(0 0 1rem black);
+    }
+    95%{
+        filter: drop-shadow(0 0 1rem var(--main-color-1));
+    }
+    100%{
+        filter: drop-shadow(0 0 1rem black);
+    }
+}

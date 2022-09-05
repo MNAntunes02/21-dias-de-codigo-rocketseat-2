@@ -1,0 +1,39 @@
+<div class="flex flex-col w-96 gap-5 p-5 py-10 bg-black rounded-xl bg-opacity-80 shadow-black shadow-2xl ">
+
+    <p class="text-xl px-4 pb-6">{{ arr[cont][0].pergunta }}</p>
+
+    <div *ngIf="!escolheu" class="esconder-filho font-semibold">
+        <button *ngFor="let opcao of arr[cont]" class="button-quiz" (click)="escolha(opcao.certa)" #opc>
+            {{ opcao.nome }}
+        </button>
+    </div>
+
+    <div *ngIf="escolheu" class="esconder-filho font-semibold">
+        <button  *ngFor="let opcao of arr[cont]" [ngClass]="opcao.certa ? 'certa animate-pulse' : 'errada'" class="button-quiz" #opc>
+            {{ opcao.nome }}
+            <fa-icon [ngClass]="opcao.certa ? 'icon-certa' : 'icon-errada'" [icon]="opcao.certa ? faCircleCheck : faCircleXmark"></fa-icon>
+        </button>
+    </div>
+
+    <div class="w-full flex items-center justify-between">
+
+        <button [disabled]="cont == 0" 
+                [ngClass]="escolheu == true && cont !== 0 ? 'animate-pulse' : ''" 
+                class="button-arrow" 
+                (click)="backQuestion()">
+                &lt;
+        </button>
+
+        <p *ngIf="escolheu" [ngClass]=" resposta == 'CERTA RESPOSTA!!' ? 'text-green-500' : 'text-red-500'"  class="font-bold ">{{ resposta }}</p>
+
+        <button [disabled]="cont == 2" 
+                [ngClass]="escolheu == true && cont !== 2 ? 'animate-pulse' : ''" 
+                class="button-arrow" 
+                (click)="nextQuestion()">
+                &gt;
+        </button>
+
+    </div>
+    
+
+</div>

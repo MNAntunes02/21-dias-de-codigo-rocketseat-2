@@ -1,0 +1,15 @@
+.scrollbar-hidden::-webkit-scrollbar{
+    width: 50px;
+    height: 10px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb{
+    @apply bg-purple-500 rounded-lg bg-opacity-60;
+}
+
+#bg1{background-image: url(../../../../../assets/images/pexels-bg1.jpg); background-size: cover; background-position: center;}
+#bg2{background-image: url(../../../../../assets/images/pexels-bg2.jpg); background-size: cover; background-position: center;}
+#bg3{background-image: url(../../../../../assets/images/pexels-bg3.jpg); background-size: cover; background-position: center;}
+#bg4{background-image: url(../../../../../assets/images/pexels-bg4.jpg); background-size: cover; background-position: center;}
+#bg5{background-image: url(../../../../../assets/images/pexels-bg5.jpg); background-size: cover; background-position: center;}
+#bg6{background-image: url(../../../../../assets/images/pexels-bg6.jpg); background-size: cover; background-position: center;}

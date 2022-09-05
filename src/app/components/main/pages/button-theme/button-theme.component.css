@@ -1,0 +1,26 @@
+input[type='checkbox'] {
+    box-shadow: inset 0 0 .2rem black;
+    position: relative;
+}
+
+input:checked[type='checkbox'] {
+    @apply bg-blue-400;
+}
+
+input[type='checkbox']:before {
+    @apply bg-white w-10 h-10 rounded-full absolute left-0 scale-110 duration-500;
+    content: '';
+    box-shadow: 0 0 .2rem black;
+}
+
+input:checked[type='checkbox']:before {
+    @apply left-10;
+}
+
+.imagem{
+    @apply w-screen h-screen absolute top-0 left-0 -z-10;
+    /* background-image: url(../../../../../assets/images/blue-sky.jpg); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
