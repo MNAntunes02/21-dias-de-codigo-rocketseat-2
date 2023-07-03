@@ -2,4 +2,7 @@
 <app-main class="h-full w-full min-h-[500px] -mt-10 lg:mt-0">
     <router-outlet></router-outlet>
 </app-main>
+<button (click)="openDialog()" class="absolute lg:bottom-16 lg:left-16 bottom-20 left-4 w-16 h-16 rounded-full bg-gradient-to-bl to-main from-second text-white z-10">
+    <fa-icon [icon]="faFileLine"></fa-icon>
+</button>
 <app-footer class="h-24 w-full fixed bottom-0"></app-footer>

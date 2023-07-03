@@ -28,6 +28,7 @@ html{
 body{
     background-color: black;
     background-image: url(./assets/images/bg-pink.jpg);
+    /* background-image: url(./assets/images/blue-sky.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

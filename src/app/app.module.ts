@@ -4,6 +4,7 @@ import { NgParticlesModule } from "ng-particles"
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog'
 
 
 //Component
@@ -18,6 +19,7 @@ import { ParticleJsComponent } from './components/main/pages/particle-js/particl
 import { FormLoginComponent } from './components/main/pages/form-login/form-login.component';
 import { GalleryComponent } from './components/main/pages/gallery/gallery.component';
 import { QuizComponent } from './components/main/pages/quiz/quiz.component';
+import { InstagramComponent } from './components/instagram/instagram.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { QuizComponent } from './components/main/pages/quiz/quiz.component';
     FormLoginComponent,
     GalleryComponent,
     QuizComponent,
+    InstagramComponent,
 
   ],
   imports: [
@@ -39,8 +42,8 @@ import { QuizComponent } from './components/main/pages/quiz/quiz.component';
     AppRoutingModule,
     FontAwesomeModule,
     NoopAnimationsModule,
-    NgParticlesModule
-
+    NgParticlesModule,
+    MatDialogModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: 'form-login', component: FormLoginComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'quiz', component: QuizComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({

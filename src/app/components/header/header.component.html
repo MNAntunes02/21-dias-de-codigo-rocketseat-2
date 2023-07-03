@@ -1,17 +1,16 @@
-<!-- <header class="w-full h-full flex justify-center items-center text-white bg-gradient-to-t to-black from-transparent"> -->
-<header class="w-full h-32 flex justify-center items-center text-white bg-gradient-to-t to-black from-transparent">
+<header #header class="w-full h-32 flex justify-center items-center text-white bg-gradient-to-t to-black from-transparent z-50">
     <menu class="container flex justify-between items-center font-medium z-50">
-        <button routerLink="/" class="p-4 rounded-lg bg-gradient-to-bl to-[var(--main-color-1)] from-[var(--main-color-2)] font-semibold ml-4 lg:ml-0">Parte 2</button>
-        <ul #menu class="lg:flex lg:divide-x divide lg:divide-gray-600 lg:bg-transparent lg:text-base lg:static block relative top-52 left-52 bg-black bg-opacity-80 p-2 gap-3 text-lg z-50 rounded-lg duration-500">
-            <input #burger type="checkbox" name="" id="checkbox" class="hidden">
+        <button routerLink="/" class="p-4 rounded-lg bg-gradient-to-bl to-main from-second font-semibold ml-4 lg:ml-16">Parte 2</button>
+        <ul [ngClass]="{'left-3':menu}" class="lg:flex lg:divide-x divide lg:divide-gray-600 lg:bg-transparent lg:text-base lg:static block relative left-52 top-52 bg-black bg-opacity-80 p-2 gap-3 text-lg rounded-lg duration-500 z-50">
+            <input type="checkbox" name="" id="checkbox" class="hidden">
             <label for="checkbox" class="bg-black bg-opacity-80 p-4 pr-9 -ml-20 rounded-lg cursor-pointer lg:hidden" (click)="openMenu()"><fa-icon class="text-2xl" [icon]="faBars"></fa-icon></label>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/button-theme">Dark mode Toogle</a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/loading">     Loading...      </a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/particle-js"> Particle.js     </a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/form-login">  Form Login      </a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/gallery">     Galeria         </a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="">             Menu Responsivo </a></li>
-            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a href="/quiz">        Form Quiz       </a></li>
-        </ul>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="button-theme" (click)="openMenu()">Dark mode Toogle</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="loading" (click)="openMenu()">Loading...</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="particle-js" (click)="openMenu()">Particle.js</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="form-login" (click)="openMenu()">Form Login</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="gallery" (click)="openMenu()">Galeria</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="menu" (click)="openMenu()">Menu Responsivo</a></li>
+            <li class="px-4 py-4 lg:pl-4 lg:py-1"><a routerLinkActive="active" routerLink="quiz" (click)="openMenu()">Form Quiz</a></li>
+     </ul>
     </menu>
 </header>

@@ -1,11 +1,11 @@
-<div class="container h-[50vh] grid grid-flow-col overflow-x-scroll overflow-y-hidden gap-5 snap-x scrollbar-hidden shadow-inner shadow-black rounded-xl snap-proximity">
-    <div id="bg1" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg ml-[400px]"></div>
-    <div id="bg2" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
-    <div id="bg3" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
-    <div id="bg4" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
-    <div id="bg5" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
-    <div id="bg6" class="w-[800px] h-[400px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg mr-[400px]"></div>
+<div #grid class="container w-screen lg:h-[50vh] h-[30vh] grid grid-flow-col overflow-x-scroll overflow-y-hidden gap-5 snap-x scrollbar-hidden shadow-inner shadow-black rounded-xl snap-mandatory duration-500">
+    <div id="bg1" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg ml-[400px]"></div>
+    <div id="bg2" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
+    <div id="bg3" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
+    <div id="bg4" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
+    <div id="bg5" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg"></div>
+    <div id="bg6" class="lg:w-[800px] lg:h-[400px] w-[400px] h-[200px] my-auto bg-slate-700 snap-center shadow-xl shadow-black rounded-lg mr-[400px]"></div>
 
-    <button class="absolute w-10 h-10 bg-gray-400 rounded-full right-96 top-[48vh]"><fa-icon [icon]="faAngleRight"></fa-icon></button>
-    <button class="absolute w-10 h-10 bg-gray-400 rounded-full left-96 top-[48vh] rotate-180"><fa-icon [icon]="faAngleRight"></fa-icon></button>
+    <button (click)="backImg()" class="absolute lg:block hidden w-10 h-10 bg-gray-400 rounded-full  lg:left-[20%]  left-[5%]  lg:top-[48vh] top-[42vh] rotate-180 -z-0"><fa-icon [icon]="faAngleRight"></fa-icon></button>
+    <button (click)="nextImg()" class="absolute lg:block hidden w-10 h-10 bg-gray-400 rounded-full lg:right-[20%] right-[5%]  lg:top-[48vh] top-[42vh] -z-0"><fa-icon [icon]="faAngleRight"></fa-icon></button>
 </div>
