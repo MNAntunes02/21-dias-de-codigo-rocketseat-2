@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
-    "build": "ng build",
+    "build": "ng build --base-href=\"https://mnantunes02.github.io/21-dias-de-codigo-rocketseat-2/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
